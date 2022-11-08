@@ -1,34 +1,38 @@
 <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1><label id="minutes">00</label>:<label id="seconds">00</label></h1>
-        <div class="container">
-            <div>
-                <h3 id="home-title">HOME</h3>
-                <h4 id="home-points">0</h1>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1><label id="minutes">00</label>:<label id="seconds">00</label></h1>
+    <div class="container">
+        <div>
+            <h3 id="home-title">HOME</h3>
+            <h4 id="home-points">0</h1>
                 <div class="options">
                     <button onclick="addPoints('home', 1)">+1</button>
                     <button onclick="addPoints('home', 2)">+2</button>
                     <button onclick="addPoints('home', 3)">+3</button>
                 </div>
-            </div>
-            <div>
-                <h3 id="guest-title">GUEST</h3>
-                <h4 id="guest-points">0</h1>
+        </div>
+        <div>
+            <h3 id="guest-title">AWAY</h3>
+            <h4 id="guest-points">0</h1>
                 <div class="options">
                     <button onclick="addPoints('guest', 1)">+1</button>
                     <button onclick="addPoints('guest', 2)">+2</button>
                     <button onclick="addPoints('guest', 3)">+3</button>
                 </div>
-            </div>
         </div>
-        <div class="bottom">
-            <button id="end-start" onclick="endStart()">New Game</button>
-        </div>
-        <h5 id="user-message"></h5>
-        <script src="index.js"></script>
-    </body>
+    </div>
+    <div class="bottom">
+        <button id="end-start" onclick="endStart()">New Game</button>
+    </div>
+    <h5 id="user-message"></h5>
+    <script src="index.js"></script>
+</body>
+
 </html>
